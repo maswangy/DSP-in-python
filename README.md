@@ -1,1 +1,1 @@
-# DSP-in-python
+# Digital Signal Processing in Python
