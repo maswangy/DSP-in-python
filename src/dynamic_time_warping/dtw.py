@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
 
 
-def dtw_(x, y, dist='euclidean'):
+def dtw(x, y, dist='euclidean'):
     """
     Function for Vanilla Dynamic Time Warping (DTW) of two sequences.
 
@@ -111,6 +111,6 @@ if __name__ == '__main__':
             69, 71, 73, 75, 76, 76, 76, 76,
             76, 75, 73, 71, 70, 70, 71, 73,
             75, 80, 80, 80, 78]
-    dist, cost_matrix, acc_cost_matrix, path = dtw_(sig1, sig2)
+    dist, cost_matrix, acc_cost_matrix, path = dtw(sig1, sig2)
     plot_grid(acc_cost_matrix, path)
     plot_alignment(sig1, sig2, path)
